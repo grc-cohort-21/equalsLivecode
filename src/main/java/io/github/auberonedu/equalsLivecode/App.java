@@ -11,19 +11,19 @@ public class App {
         // To start, look at Centroid.java
         // BEFORE running the code, make a prediction of what the following will print:
 
-        Centroid locA = new Centroid(4, 9, "Salamander");
-        Centroid locB = new Centroid(4, 9, "Salamander");
+        // Centroid locA = new Centroid(4, 9, null);
+        // Centroid locB = new Centroid(2, 9, null);
 
-        System.out.println("Result of locA == locB " + (locA == locB));
-        System.out.println("Result of locA.equals(locB) " + locA.equals(locB));
+        // System.out.println("Result of locA == locB " + (locA == locB));
+        // System.out.println("Result of locA.equals(locB) " + locA.equals(locB));
 
-        //videoDemo();
+        videoDemo();
     }
 
     // We will look at this a bit later in the livecode, please ignore for first part
     public static void videoDemo() {
         List<char[][]> video = List.of(
-            // Frame 0: Salamander is at [2, 3] (all locations in [row, column] format)
+            // Frame 1: Salamander is at [2, 3] (all locations in [row, column] format)
             //          Food is at [4, 5]
             new char[][]{{'.','.','.','.','.','.','.',},
                          {'.','.','.','.','.','.','.',},
@@ -94,5 +94,4 @@ public class App {
         boolean hasOverlap = !Collections.disjoint(salamanderLocations, foodLocations);
         System.out.println("Do the salamander locations overlap with the food locations: " + hasOverlap);
     }
-
 }
