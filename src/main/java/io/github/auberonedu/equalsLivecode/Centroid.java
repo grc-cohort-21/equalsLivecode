@@ -22,4 +22,40 @@ public class Centroid {
     public String getName() {
         return name;
     }
+
+
+    @Override
+    public boolean equals(Object o) {
+        // is this equal to o?
+        // ensure r, c, and name are all equal between this and o
+        // ensure we meet Java equals contract
+        if(o == null) return false;
+
+        if(!this.getClass().equals(o.getClass())) {
+            return false;
+        }
+
+        Centroid other = (Centroid) o;
+
+        if (this.r != other.r) return false;
+        if (this.c != other.c) return false;
+
+        if (this.name == null) {
+            return other.name == null;
+            // if(other.name == null) {
+            //     return true;
+            // }
+            // else { // other.name is not null
+            //     return false;
+            // }
+        }
+
+        return this.name.equals(other.name);
+        // if (!this.name.equals(other.name)) {
+        //     return false;
+        // } else {
+        //     return true;
+        // }
+    }
+
 }
