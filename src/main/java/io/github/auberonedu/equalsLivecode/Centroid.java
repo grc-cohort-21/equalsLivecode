@@ -29,7 +29,7 @@ public class Centroid {
         int result = 1;
         result = prime * result + r;
         result = prime * result + c;
-        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        // result = prime * result + ((name == null) ? 0 : name.hashCode());
         return result;
     }
 
@@ -46,11 +46,11 @@ public class Centroid {
             return false;
         if (c != other.c)
             return false;
-        if (name == null) {
-            if (other.name != null)
-                return false;
-        } else if (!name.equals(other.name))
-            return false;
+        // if (name == null) {
+        //     if (other.name != null)
+        //         return false;
+        // } else if (!name.equals(other.name))
+        //     return false;
         return true;
     }
 

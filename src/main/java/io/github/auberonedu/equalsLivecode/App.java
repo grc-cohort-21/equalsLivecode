@@ -11,13 +11,13 @@ public class App {
         // To start, look at Centroid.java
         // BEFORE running the code, make a prediction of what the following will print:
 
-        Centroid locA = new Centroid(4, 9, "Salamander");
-        Centroid locB = new Centroid(4, 9, "Salamander");
+        // Centroid locA = new Centroid(4, 9, "Salamander");
+        // Centroid locB = new Centroid(4, 9, "Salamander");
 
-        System.out.println("Result of locA == locB " + (locA == locB));
-        System.out.println("Result of locA.equals(locB) " + locA.equals(locB));
+        // System.out.println("Result of locA == locB " + (locA == locB));
+        // System.out.println("Result of locA.equals(locB) " + locA.equals(locB));
 
-        //videoDemo();
+        videoDemo();
     }
 
     // We will look at this a bit later in the livecode, please ignore for first part
